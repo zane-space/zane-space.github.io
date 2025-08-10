@@ -6,48 +6,103 @@
   <title>About - Zane Space</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Inter', sans-serif;
       background-color: #f7f7f7;
       color: #222;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      animation: fadeIn 1.6s ease-in-out;
+      padding: 2rem;
+      animation: fadeIn 1.2s ease-in-out;
     }
+
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
+
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1rem 2rem;
+      margin-bottom: 2rem;
       border-bottom: 1px solid #ddd;
-      background-color: #fff;
+      padding-bottom: 1rem;
     }
+
     header a {
       text-decoration: none;
-      color: #222;
+      color: #444;
       font-weight: 600;
       font-size: 1.2rem;
     }
-    header a:hover { text-decoration: underline; }
-    main {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 2rem;
-      text-align: center;
+
+    header a:hover {
+      color: #000;
     }
-    main p {
-      max-width: 720px;
-      font-size: 1.1rem;
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    .about-text {
+      max-width: 800px;
+      text-align: left;
       line-height: 1.6;
+      font-size: 1.1rem;
+      margin-bottom: 3rem;
+    }
+
+    .about-text p::first-letter {
+      font-size: 2rem;
+      font-weight: bold;
+      float: left;
+      margin-right: 0.3rem;
+      line-height: 1;
+    }
+
+    .resume {
+      max-width: 900px;
+    }
+
+    .resume h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    .resume-item {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .resume-left {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .resume-left a {
       color: #444;
+      text-decoration: none;
+    }
+
+    .resume-left a:hover {
+      text-decoration: underline;
+    }
+
+    .resume-right ul {
+      list-style: disc;
+      padding-left: 1.2rem;
+      line-height: 1.6;
     }
   </style>
 </head>
@@ -58,13 +113,32 @@
   </header>
 
   <main>
-    <p>
-      Innovative and detail-oriented software engineer with an academic background in mechanical engineering 
-      and hands-on experience in robotics and automation. Experienced in designing UI for robotic arms 
-      and developing software for manufacturing automation flow and systems. Contributed to visual algorithm 
-      design during graduate studies. Passionate about transitioning into autonomous vehicles and robotic 
-      system design, leveraging a solid foundation in automation, control systems, and software development.
-    </p>
+    <h1>About</h1>
+    <div class="about-text">
+      <p>
+        Innovative and detail-oriented software engineer with an academic background in mechanical engineering and hands-on experience in robotics and automation. Experienced in designing UI for robotic arms and developing software for manufacturing automation flow and systems. Contributed to visual algorithm design during graduate studies. Passionate about transitioning into autonomous vehicles and robotic system design, leveraging a solid foundation in automation, control systems, and software development.
+      </p>
+    </div>
+
+    <section class="resume">
+      <h2>Resume</h2>
+      <div class="resume-item">
+        <div class="resume-left">
+          <strong>Software Engineer</strong><br>
+          <a href="">Delta Electronics Inc.</a><br>
+          2023 – Present<br>
+          Taipei, Taiwan
+        </div>
+        <div class="resume-right">
+          <ul>
+            <li>Designed and developed a smart manufacturing platform to enable customers in diverse machining applications to quickly generate machining programs.</li>
+            <li>Architected software using design patterns, ensuring maintainable and scalable solutions.</li>
+            <li>Developed and simplified hardware component APIs, streamlining integration and improving efficiency in machining workflows.</li>
+            <li>Designed, calibrated, and tested user interfaces, machining workflows, and systems to ensure reliability and high performance.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </main>
 </body>
 </html>
