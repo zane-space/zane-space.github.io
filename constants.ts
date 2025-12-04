@@ -4,16 +4,19 @@ export const CONTACT: ContactInfo = {
   email: "zane.ch.tsai@gmail.com",
   phone: "+886 953751359",
   location: "Taipei City, Taiwan",
-  linkedin: "https://www.linkedin.com/in/zane-tsai"
+  linkedin: "https://www.linkedin.com/in/zane-tsai",
+  github: "https://github.com/zane-space"
 };
 
 export const SUMMARY = "Innovative and detail-oriented software engineer with an academic background in mechanical engineering and hands-on experience in robotics and automation. Experienced in designing UI for robotic arms and developing software for manufacturing automation flow and systems. Contributed to visual algorithm design during graduate studies. Passionate about transitioning into autonomous vehicles and robotic system design, leveraging a solid foundation in automation, control systems, and software.";
 
 export const SKILLS: SkillCategory[] = [
   { category: "Languages", skills: ["C#", "C++", "Python"] },
-  { category: "Tools & Frameworks", skills: ["Git", "ROS", "ROS2", "React", "TypeScript"] },
+  { category: "Tools & Frameworks", skills: ["Git", "ROS2", "Qt", "Confluence", "Jira"] },
   { category: "Spoken Languages", skills: ["English (Advanced, TOEIC 900)", "Japanese (Intermediate, JLPT N1)", "Chinese (Native)"] }
 ];
+
+console.log("=== LOADED constants.ts ===", SKILLS);
 
 export const EXPERIENCE: ExperienceItem[] = [
   {
@@ -22,7 +25,7 @@ export const EXPERIENCE: ExperienceItem[] = [
     company: "Delta Electronics Inc.",
     companyUrl: "https://www.deltaww.com/en-US/index",
     location: "Taipei, Taiwan",
-    period: "2023 – Present",
+    period: "2023 – 2025",
     type: "work",
     description: "Designed and developed a smart manufacturing platform to enable customers in diverse machining applications to quickly generate machining programs."
   },
@@ -68,7 +71,7 @@ export const PROJECTS: ProjectItem[] = [
     year: "2025",
     description: "SimpleControl is a Qt/QML-based interface for assembling automation devices and creating operation flows. It demonstrates a flexible, modular approach to building and editing automation scripts without rewriting code for each machine configuration.",
     tags: ["C++", "Qt", "UI/UX"],
-    imageUrl: "bosch.jpg",
+    imageUrl: "/machine.jpg",
     links: [
       { label: "GitHub Repository", url: "https://github.com/zane-space/SimpleControl" }
     ],
@@ -91,8 +94,8 @@ export const PROJECTS: ProjectItem[] = [
     subtitle: "Industrial Automation",
     year: "2024 - 2025",
     description: "Developed at Delta Electronics, this product is also known as the Rapid Transform Machine (RTM). It is a smart manufacturing platform that enables customers in diverse machining applications to quickly generate machining programs, streamlining the integration of hardware and software.",
-    tags: ["C#", ".NET", "API Design"],
-    imageUrl: "Mahcine-Control.png",
+    tags: ["C#", ".NET", "API Design", "UI/UX"],
+    imageUrl: "/factory.jpg",
     links: [
       { label: "News Article", url: "https://www.deltaww.com/en-us/news/39167" }
     ],
@@ -113,7 +116,7 @@ export const PROJECTS: ProjectItem[] = [
     year: "2021",
     description: "A research project conducted during my Master's at APRILab. This system integrates deep-learning object detection with real-time SLAM to enable robust 3D reconstruction in dynamic settings where moving objects traditionally degrade SLAM performance.",
     tags: ["C++", "Python", "ROS", "Deep Learning", "SLAM", "Computer Vision"],
-    imageUrl: "TurtleBot4.jpg",
+    imageUrl: "/turtle-bot.jpg",
     links: [
       { label: "APRILab Project Page", url: "https://aprilabntu.wixsite.com/website/immversive-reality" }
     ],

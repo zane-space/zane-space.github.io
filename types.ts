@@ -40,6 +40,7 @@ export interface ContactInfo {
   phone: string;
   location: string;
   linkedin: string;
+  github: string;
 }
 
 export interface SkillCategory {

@@ -4,7 +4,7 @@ import Home from './pages/Home';
 import Resume from './pages/Resume';
 import Projects from './pages/Projects';
 import { ChatWidget } from './components/ChatWidget';
-import { Menu, X, Github, Linkedin, Cpu } from 'lucide-react';
+import { Menu, X, Cpu } from 'lucide-react';
 import { CONTACT } from './constants';
 
 const Navbar: React.FC = () => {
@@ -39,17 +39,6 @@ const Navbar: React.FC = () => {
             <NavLink to="/" className={navClasses}>Home</NavLink>
             <NavLink to="/resume" className={navClasses}>Resume</NavLink>
             <NavLink to="/projects" className={navClasses}>Projects</NavLink>
-            
-            <div className="w-px h-5 bg-slate-300 mx-2"></div>
-            
-            <div className="flex items-center gap-4">
-              <a href={CONTACT.linkedin} target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-600 transition-colors">
-                <Linkedin className="w-5 h-5" />
-              </a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-slate-900 transition-colors">
-                <Github className="w-5 h-5" />
-              </a>
-            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -69,10 +58,6 @@ const Navbar: React.FC = () => {
             <NavLink to="/" className={mobileNavClasses}>Home</NavLink>
             <NavLink to="/resume" className={mobileNavClasses}>Resume</NavLink>
             <NavLink to="/projects" className={mobileNavClasses}>Projects</NavLink>
-          </div>
-          <div className="mt-4 pt-4 border-t border-slate-100 flex gap-4 px-4">
-             <a href={CONTACT.linkedin} className="text-slate-500 hover:text-blue-600">LinkedIn</a>
-             <a href="https://github.com" className="text-slate-500 hover:text-slate-900">GitHub</a>
           </div>
         </div>
       )}

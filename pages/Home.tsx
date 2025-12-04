@@ -10,7 +10,7 @@ const Home: React.FC = () => {
       <section className="flex flex-col md:flex-row items-center justify-between gap-12 py-10 md:py-20">
         <div className="flex-1 space-y-6">
           <div className="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium tracking-wide">
-            Software Engineer & Roboticist
+            Software, Automation & Robots
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-slate-900 tracking-tight leading-tight">
             Hi, I'm <span className="text-blue-600">Zane Tsai</span>
@@ -40,6 +40,10 @@ const Home: React.FC = () => {
               <a href={CONTACT.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-slate-600 hover:text-blue-600 transition-colors">
                 <div className="p-2 bg-slate-50 rounded-lg"><Linkedin className="w-4 h-4" /></div>
                 <span className="text-sm">LinkedIn Profile</span>
+              </a>
+              <a href={CONTACT.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-slate-600 hover:text-blue-600 transition-colors">
+                <div className="p-2 bg-slate-50 rounded-lg"><Github className="w-4 h-4" /></div>
+                <span className="text-sm">GitHub Link</span>
               </a>
               <div className="flex items-center gap-3 text-slate-600">
                 <div className="p-2 bg-slate-50 rounded-lg"><Phone className="w-4 h-4" /></div>

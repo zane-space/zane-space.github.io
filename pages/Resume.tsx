@@ -10,6 +10,12 @@ const Resume: React.FC = () => {
         <p className="text-slate-500">A timeline of my professional career and academic background.</p>
       </div>
 
+      <div className="flex justify-end mb-8">
+        <a href="/Zane-Resume.pdf" download className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors">
+          Download Resume (PDF)
+        </a>
+      </div>
+
       <div className="relative border-l-2 border-slate-200 ml-3 md:ml-6 space-y-12 pb-10">
         {EXPERIENCE.map((item, index) => (
           <div key={item.id} className="relative pl-8 md:pl-16 group">
@@ -92,12 +98,6 @@ const Resume: React.FC = () => {
             </div>
           </div>
         ))}
-      </div>
-      
-      <div className="mt-16 text-center border-t border-slate-200 pt-8">
-         <a href="/metadata.json" download className="inline-flex items-center gap-2 text-sm font-medium text-slate-400 hover:text-blue-600 transition-colors">
-            Download Resume Data (JSON)
-         </a>
       </div>
     </div>
   );
