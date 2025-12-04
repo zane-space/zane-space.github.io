@@ -39,11 +39,11 @@ const Home: React.FC = () => {
               </a>
               <a href={CONTACT.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-slate-600 hover:text-blue-600 transition-colors">
                 <div className="p-2 bg-slate-50 rounded-lg"><Linkedin className="w-4 h-4" /></div>
-                <span className="text-sm">LinkedIn Profile</span>
+                <span className="text-sm truncate">LinkedIn Profile</span>
               </a>
               <a href={CONTACT.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-slate-600 hover:text-blue-600 transition-colors">
                 <div className="p-2 bg-slate-50 rounded-lg"><Github className="w-4 h-4" /></div>
-                <span className="text-sm">GitHub Link</span>
+                <span className="text-sm truncate">GitHub Link</span>
               </a>
               <div className="flex items-center gap-3 text-slate-600">
                 <div className="p-2 bg-slate-50 rounded-lg"><Phone className="w-4 h-4" /></div>
