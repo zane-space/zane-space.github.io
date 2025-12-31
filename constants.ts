@@ -8,7 +8,7 @@ export const CONTACT: ContactInfo = {
   github: "https://github.com/zane-space"
 };
 
-export const SUMMARY = "Innovative and detail-oriented software engineer with an academic background in mechanical engineering and hands-on experience in robotics and automation. Experienced in designing UI for robotic arms and developing software for manufacturing automation flow and systems. Contributed to visual algorithm design during graduate studies. Passionate about transitioning into autonomous vehicles and robotic system design, leveraging a solid foundation in automation, control systems, and software.";
+export const SUMMARY = "A software engineer with an academic background in mechanical engineering and hands-on experience in robotics and automation. Experienced in designing UI for robotic arms and developing software for manufacturing automation flow and systems. Passionate about transitioning into autonomous vehicles and robotic system design, leveraging a solid foundation in automation, control systems, and software.";
 
 export const SKILLS: SkillCategory[] = [
   { category: "Languages", skills: ["C#", "C++", "Python"] },
